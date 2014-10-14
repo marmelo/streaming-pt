@@ -1,9 +1,9 @@
 streaming-pt
 ============
 
-Live TV and Radio shell scripts from Portugal.
+Live Portuguese TV and radio.
 
-**Dislaimer:**  
+**Disclaimer:**  
 All streams are official.
 
 Please add a [new issue](https://github.com/marmelo/streaming-pt/issues) to report broken links or suggest new streams.
