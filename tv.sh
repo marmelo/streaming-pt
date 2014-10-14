@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 PLAYER="mplayer"
 RTMPDUMP="rtmpdump"
