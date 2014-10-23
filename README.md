@@ -26,7 +26,7 @@ Usage
 $ ./tv.sh 
 1) RTP 1              6) SIC Noticias          11) RTP Acores
 2) RTP 2              7) TVI24 (N/A)           12) RTP Africa
-3) SIC                8) RTP Memoria           13) ARTV (N/A)
+3) SIC                8) RTP Memoria           13) ARTV
 4) TVI (N/A)          9) RTP Internacional     14) ETV
 5) RTP Informacao    10) RTP Madeira           15) Euronews
 Which TV channel do you want to watch?

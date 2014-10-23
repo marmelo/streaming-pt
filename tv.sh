@@ -16,7 +16,7 @@ TITLES=(
   "RTP Madeira"
   "RTP Acores"
   "RTP Africa"
-  "ARTV (N/A)"
+  "ARTV"
   "ETV"
   "Euronews"
 )
@@ -34,7 +34,7 @@ STREAMS=(
   "$RTMPDUMP -r rtmp://ec21.rtp.pt/livetv -W http://www.rtp.pt/play/player.swf -y 2ch1016h264H14 | $PLAYER -"
   "$RTMPDUMP -r rtmp://ec21.rtp.pt/livetv -W http://www.rtp.pt/play/player.swf -y 2rtpacores | $PLAYER -"
   "$RTMPDUMP -r rtmp://ec21.rtp.pt/livetv -W http://www.rtp.pt/play/player.swf -y 2ch27h264 | $PLAYER -"
-  "echo Not yet..."
+  "$PLAYER rtsp://www.canal.parlamento.pt/Live"
   "$RTMPDUMP -r rtmp://213.13.26.43/live -W http://js.sapo.pt/Assets/Images/ProjectVideo/flash/videojs.swf -y etv_direto | $PLAYER -"
   "$RTMPDUMP -r rtmp://fr-par-3.stream-relay.hexaglobe.net:1935/rtpeuronewslive -W http://pt.euronews.com/media/player_live_1_14.swf -y pt_video750_rtp.sdp | $PLAYER -"
 )
