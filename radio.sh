@@ -19,6 +19,7 @@ TITLES=(
   "Sudoeste"
   "TSF"
   "Vodafone"
+  "Radio Zero"
 )
 
 STREAMS=(
@@ -37,6 +38,7 @@ STREAMS=(
   "$RTMPDUMP -r rtmp://live.livextend.com/liveswtmn -y swtmns1 | $PLAYER -"
   "$PLAYER http://tsfdirecto.tsf.pt/tsfdirecto.aac"
   "$RTMPDUMP -r rtmp://195.23.102.206/autometadata5 -y vodafone.sdp | $PLAYER -"
+  "$PLAYER http://stream.radiozero.pt:8000/zero128.mp3"
 )
 
 PS3="Which radio do you want to listen? "

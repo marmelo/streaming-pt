@@ -26,7 +26,7 @@ Usage
 $ ./tv.sh 
 1) RTP 1              6) SIC Noticias          11) RTP Acores
 2) RTP 2              7) TVI24 (N/A)           12) RTP Africa
-3) SIC                8) RTP Memoria           13) ARTV (N/A)
+3) SIC                8) RTP Memoria           13) ARTV
 4) TVI (N/A)          9) RTP Internacional     14) ETV
 5) RTP Informacao    10) RTP Madeira           15) Euronews
 Which TV channel do you want to watch?
@@ -34,9 +34,10 @@ Which TV channel do you want to watch?
 
 ```bash
 $ ./radio.sh
-1) Antena1     4) Cidade FM   7) M80         10) RFM         13) Sudoeste
-2) Antena2     5) Comercial   8) Mega Hits   11) RUC         14) TSF
-3) Antena3     6) Kiss FM     9) Renascenca  12) Smooth      15) Vodafone
+1) Antena1       5) Comercial    9) Renascenca  13) Sudoeste
+2) Antena2       6) Kiss FM     10) RFM         14) TSF
+3) Antena3       7) M80         11) RUC         15) Vodafone
+4) Cidade FM     8) Mega Hits   12) Smooth      16) Radio Zero
 Which radio do you want to listen? 
 ```
 
