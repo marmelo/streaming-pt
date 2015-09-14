@@ -23,7 +23,7 @@ TITLES=(
 )
 
 STREAMS=(
-  "$RTMPDUMP -r rtmp://ec23.rtp.pt/liveradio -y antena180a | $PLAYER -"
+  "$PLAYER http://195.245.168.21/antena1"
   "$RTMPDUMP -r rtmp://ec24.rtp.pt/liveradio -y antena280a | $PLAYER -"
   "$RTMPDUMP -r rtmp://ec21.rtp.pt/liveradio -y antena380a | $PLAYER -"
   "$RTMPDUMP -r rtmp://195.23.102.206/cidadefmlc -y cidadefmlc.sdp | $PLAYER -" 
