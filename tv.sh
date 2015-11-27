@@ -8,7 +8,7 @@ TITLES=(
   "RTP 2"
   "SIC"
   "TVI"
-  "RTP Informacao"
+  "RTP 3"
   "SIC Noticias"
   "TVI24"
   "RTP Memoria"
