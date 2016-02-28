@@ -36,7 +36,7 @@ STREAMS=(
   "$RTMPDUMP -r rtmp://rtppullswflivefs.fplive.net --live -a rtppullswflive-live -W http://www.rtp.pt/play/player.swf -y 2ch27h264 | $PLAYER -"
   "$PLAYER rtsp://www.canal.parlamento.pt/Live"
   "$RTMPDUMP -r rtmp://213.13.26.43/live -W http://js.sapo.pt/Assets/Images/ProjectVideo/flash/videojs.swf -y etv_direto | $PLAYER -"
-  "$PLAYER $(wget $(wget "http://pt.euronews.com/noticias/en-direto/?action=getHexaglobeUrl" --post-data=action=getHexaglobeUrl -o /dev/null -O -) -o /dev/null -O -|sed 's/,/\n/g'|grep pt|head -n 1|cut -d: -f3-|cut -d\" -f2|sed 's/\\//g')"
+  "$PLAYER rtsp://ewns-hls-b-stream.hexaglobe.net/rtpeuronewslive/pt_vidan750_rtp.sdp"
 )
 
 PS3="Which TV channel do you want to watch? "
