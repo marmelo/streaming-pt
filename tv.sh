@@ -34,7 +34,7 @@ STREAMS=(
   "$RTMPDUMP -r rtmp://rtppullswflivefs.fplive.net --live -a rtppullswflive-live -W http://www.rtp.pt/play/player.swf -y 2ch1016h264H14 | $PLAYER -"
   "$RTMPDUMP -r rtmp://rtppullswflivefs.fplive.net --live -a rtppullswflive-live -W http://www.rtp.pt/play/player.swf -y 2rtpacores | $PLAYER -"
   "$RTMPDUMP -r rtmp://rtppullswflivefs.fplive.net --live -a rtppullswflive-live -W http://www.rtp.pt/play/player.swf -y 2ch27h264 | $PLAYER -"
-  "$PLAYER rtsp://www.canal.parlamento.pt/Live"
+  "$PLAYER http://193.126.16.68:1935/livenlin4/mp4:2liveplncleanpub/playlist.m3u8"
   "$RTMPDUMP -r rtmp://213.13.26.43/live -W http://js.sapo.pt/Assets/Images/ProjectVideo/flash/videojs.swf -y etv_direto | $PLAYER -"
   "$PLAYER rtsp://ewns-hls-b-stream.hexaglobe.net/rtpeuronewslive/pt_vidan750_rtp.sdp"
 )
