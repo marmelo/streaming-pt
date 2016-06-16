@@ -28,7 +28,7 @@ STREAMS=(
   "$RTMPDUMP -r rtmp://ec21.rtp.pt/liveradio -y antena380a | $PLAYER -"
   "$RTMPDUMP -r rtmp://195.23.102.206/cidadefmlc -y cidadefmlc.sdp | $PLAYER -" 
   "$RTMPDUMP -r rtmp://195.23.102.208/comerciallc -y comerciallc.sdp | $PLAYER -"
-  "$PLAYER http://s3.viastreaming.net:8885"
+  "$PLAYER http://cp5.serverse.com:7104/"
   "$RTMPDUMP -r rtmp://195.23.102.206/m80lc -y m80lc.sdp | $PLAYER -"
   "$PLAYER http://7719.live.streamtheworld.com/MEGA_HITSAAC"
   "$PLAYER http://7719.live.streamtheworld.com/RADIO_RENASCENCAAAC"
