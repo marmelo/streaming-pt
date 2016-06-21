@@ -37,7 +37,7 @@ STREAMS=(
   "$RTMPDUMP -r rtmp://mcrwowza6.mcr.iol.pt/smoothlc -y smoothlc.sdp | $PLAYER -"
   "$RTMPDUMP -r rtmp://live.livextend.com/liveswtmn -y swtmns1 | $PLAYER -"
   "$PLAYER http://tsfdirecto.tsf.pt/tsfdirecto.aac"
-  "$RTMPDUMP -r rtmp://195.23.102.206/autometadata5 -y vodafone.sdp | $PLAYER -"
+  "$PLAYER -user-agent 'Mozilla/5.0 (X11; Linux x86_64)' http://mcrscast.mcr.iol.pt/vodafone"
   "$PLAYER http://stream.radiozero.pt:8000/zero128.mp3"
 )
 
