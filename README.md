@@ -59,3 +59,24 @@ $ pacman -S rtmpdump mplayer
 # Mac OS X
 $ brew install rtmpdump mplayer
 ```
+
+How to catch RTMP streams
+-----
+
+```bash
+# redirect outgoing RTMP traffic to localhost
+$ iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT
+```
+
+```bash
+# start rtmpsrv
+$ rtmpsrv
+```
+
+Now open a web page containing media streamed over RTMP.  
+RTMP requests will be caught by `iptables` and logged by `rtmpsrv`.
+
+```bash
+# remove redirection of outgoing RTMP traffic
+$ iptables -t nat -D OUTPUT -p tcp --dport 1935 -j REDIRECT
+```
