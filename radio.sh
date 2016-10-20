@@ -23,9 +23,9 @@ TITLES=(
 )
 
 STREAMS=(
-  "$PLAYER http://195.245.168.21/antena1"
+  "$RTMPDUMP -r rtmp://ec24.rtp.pt/liveradio -y antena180a | $PLAYER -"
   "$RTMPDUMP -r rtmp://ec24.rtp.pt/liveradio -y antena280a | $PLAYER -"
-  "$RTMPDUMP -r rtmp://ec21.rtp.pt/liveradio -y antena380a | $PLAYER -"
+  "$RTMPDUMP -r rtmp://ec24.rtp.pt/liveradio -y antena380a | $PLAYER -"
   "$RTMPDUMP -r rtmp://mcrwowza5.mcr.iol.pt/cidadefmlc -y cidadefmlc.sdp | $PLAYER -" 
   "$RTMPDUMP -r rtmp://mcrwowza5.mcr.iol.pt/comerciallc -y comerciallc.sdp | $PLAYER -"
   "$PLAYER http://cp5.serverse.com:7104/"
