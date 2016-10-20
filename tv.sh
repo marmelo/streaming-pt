@@ -24,10 +24,10 @@ TITLES=(
 STREAMS=(
   "$RTMPDUMP -r rtmp://rtppullswflivefs.fplive.net --live -a rtppullswflive-live -W http://www.rtp.pt/play/player.swf -y 2ch5h264 | $PLAYER -"
   "$RTMPDUMP -r rtmp://rtppullswflivefs.fplive.net --live -a rtppullswflive-live -W http://www.rtp.pt/play/player.swf -y 2ch3h264 | $PLAYER -"
-  "$RTMPDUMP -r rtmp://213.13.26.43/live -W http://js.sapo.pt/Assets/Images/ProjectVideo/flash/videojs.swf -y sic | $PLAYER -"
+  "$PLAYER http://live.impresa.pt/live/sic/sic540p.m3u8"
   "$PLAYER $(wget http://tviplayer.iol.pt/direto/TVI -O - -o /dev/null | grep videoUrl |cut -d\' -f2)"
   "$RTMPDUMP -r rtmp://rtppullswflivefs.fplive.net --live -a rtppullswflive-live -W http://www.rtp.pt/play/player.swf -y 2ch64h264 | $PLAYER -"
-  "$RTMPDUMP -r rtmp://213.13.26.41/live -W http://js.sapo.pt/Projects/SAPOPlayer/20160902R1/jwplayer.flash.swf -y sicnoticias | $PLAYER -"
+  "$PLAYER http://live.impresa.pt/live/sicnot/sicnot540p.m3u8"
   "$PLAYER $(wget http://tviplayer.iol.pt/direto/TVI24 -O - -o /dev/null | grep videoUrl |cut -d\' -f2)"
   "$RTMPDUMP -r rtmp://rtppullswflivefs.fplive.net --live -a rtppullswflive-live -W http://www.rtp.pt/play/player.swf -y 2ch80h264 | $PLAYER -"
   "$RTMPDUMP -r rtmp://rtppullswflivefs.fplive.net --live -a rtppullswflive-live -W http://www.rtp.pt/play/player.swf -y 2ch120h264 | $PLAYER -"
