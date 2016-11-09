@@ -18,6 +18,7 @@ TITLES=(
   "RTP Africa"
   "ARTV"
   "ETV"
+  "Porto Canal"
   "Euronews"
 )
 
@@ -36,6 +37,7 @@ STREAMS=(
   "$RTMPDUMP -r rtmp://rtppullswf2livefs.fplive.net --live -a rtppullswf2live-live -W http://www.rtp.pt/play/player.swf -y 2ch27h264 | $PLAYER -"
   "$PLAYER http://193.126.16.68:1935/livenlin4/mp4:2liveplncleanpub/playlist.m3u8"
   "$RTMPDUMP -r rtmp://213.13.26.13/live -W http://js.sapo.pt/Projects/Video/160121R1/flash/videojs.swf -y etv_direto | $PLAYER -"
+  "$RTMPDUMP -r rtmp://213.13.26.13/live -W http://js.sapo.pt/Projects/SAPOPlayer/20161028R1/jwplayer.flash.swf -y portocanal | $PLAYER -"
   "$PLAYER rtsp://ewns-hls-b-stream.hexaglobe.net/rtpeuronewslive/pt_vidan750_rtp.sdp"
 )
 

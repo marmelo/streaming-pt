@@ -24,11 +24,12 @@ Usage
 
 ```bash
 $ ./tv.sh 
-1) RTP 1              6) SIC Noticias          11) RTP Acores
-2) RTP 2              7) TVI24                 12) RTP Africa
-3) SIC                8) RTP Memoria           13) ARTV
-4) TVI                9) RTP Internacional     14) ETV
-5) RTP 3             10) RTP Madeira           15) Euronews
+1) RTP 1                7) TVI24              13) ARTV
+2) RTP 2                8) RTP Memoria        14) ETV
+3) SIC                  9) RTP Internacional  15) Porto Canal
+4) TVI                 10) RTP Madeira        16) Euronews
+5) RTP 3               11) RTP Acores
+6) SIC Noticias        12) RTP Africa
 Which TV channel do you want to watch?
 ```
 
