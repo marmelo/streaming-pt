@@ -41,6 +41,10 @@ STREAMS=(
   "$PLAYER http://stream.radiozero.pt:8000/zero128.mp3"
 )
 
+# check if dependencies exist
+type $PLAYER &>/dev/null || { echo "$PLAYER is not installed"; exit 1; }
+type $RTMPDUMP &>/dev/null || { echo "$RTMPDUMP is not installed"; exit 1; }
+
 PS3="Which radio do you want to listen? "
 select radio in "${TITLES[@]}";
 do

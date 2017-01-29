@@ -41,6 +41,10 @@ STREAMS=(
   "$PLAYER rtsp://ewns-hls-b-stream.hexaglobe.net/rtpeuronewslive/pt_vidan750_rtp.sdp"
 )
 
+# check if dependencies exist
+type $PLAYER &>/dev/null || { echo "$PLAYER is not installed"; exit 1; }
+type $RTMPDUMP &>/dev/null || { echo "$RTMPDUMP is not installed"; exit 1; }
+
 PS3="Which TV channel do you want to watch? "
 select choice in "${TITLES[@]}";
 do
