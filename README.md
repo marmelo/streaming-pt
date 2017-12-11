@@ -28,7 +28,7 @@ $ ./tv.sh
 2) RTP 2                8) RTP Memoria        14) ETV
 3) SIC                  9) RTP Internacional  15) Porto Canal
 4) TVI                 10) RTP Madeira        16) Euronews
-5) RTP 3               11) RTP Acores
+5) RTP 3               11) RTP Acores         17) Kuriakos TV
 6) SIC Noticias        12) RTP Africa
 Which TV channel do you want to watch?
 ```

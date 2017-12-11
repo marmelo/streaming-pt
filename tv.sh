@@ -20,6 +20,7 @@ TITLES=(
   "ETV"
   "Porto Canal"
   "Euronews"
+  "Kuriakos TV"
 )
 
 STREAMS=(
@@ -39,6 +40,7 @@ STREAMS=(
   "$RTMPDUMP -r rtmp://213.13.26.13/live -W http://js.sapo.pt/Projects/Video/160121R1/flash/videojs.swf -y etv_direto | $PLAYER -"
   "$RTMPDUMP -r rtmp://213.13.26.13/live -W http://js.sapo.pt/Projects/SAPOPlayer/20161028R1/jwplayer.flash.swf -y portocanal | $PLAYER -"
   "$PLAYER rtsp://ewns-hls-b-stream.hexaglobe.net/rtpeuronewslive/pt_vidan750_rtp.sdp"
+  "$PLAYER http://195.22.11.11:1935/ktv/ktv2/playlist.m3u8"
 )
 
 # check if dependencies exist
