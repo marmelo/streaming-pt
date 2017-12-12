@@ -13,8 +13,7 @@ Requirements
 -----
 
 - [Bash](https://www.gnu.org/software/bash/)
-- [rtmpdump](https://rtmpdump.mplayerhq.hu/)
-- [MPlayer](http://www.mplayerhq.hu/)
+- [mpv](https://mpv.io/)
 
 If you need assistance please check [installing dependencies](#installing-dependencies).
 
@@ -48,21 +47,24 @@ Installing dependencies
 
 ```bash
 # Debian / Ubuntu
-$ apt-get install rtmpdump mplayer
+$ apt-get install mpv
 ```
 
 ```bash
 # Arch Linux
-$ pacman -S rtmpdump mplayer
+$ pacman -S mpv
 ```
 
 ```bash
-# Mac OS X
-$ brew install rtmpdump mplayer
+# Mac OS X (two alternatives)
+$ brew install mpv
+$ port install mpv
 ```
 
 How to catch RTMP streams
 -----
+
+For this you will need `iptables` and `rtmpdump`.
 
 ```bash
 # redirect outgoing RTMP traffic to localhost

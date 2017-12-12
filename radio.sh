@@ -1,7 +1,6 @@
 #!/bin/bash
 
-PLAYER="mplayer"
-RTMPDUMP="rtmpdump"
+PLAYER="mpv"
 
 TITLES=(
   "Antena1"
@@ -23,19 +22,19 @@ TITLES=(
 )
 
 STREAMS=(
-  "$RTMPDUMP -r rtmp://ec24.rtp.pt/liveradio -y antena180a | $PLAYER -"
-  "$RTMPDUMP -r rtmp://ec24.rtp.pt/liveradio -y antena280a | $PLAYER -"
-  "$RTMPDUMP -r rtmp://ec24.rtp.pt/liveradio -y antena380a | $PLAYER -"
-  "$RTMPDUMP -r rtmp://mcrwowza5.mcr.iol.pt/cidadefmlc -y cidadefmlc.sdp | $PLAYER -" 
-  "$RTMPDUMP -r rtmp://mcrwowza5.mcr.iol.pt/comerciallc -y comerciallc.sdp | $PLAYER -"
+  "$PLAYER --referrer http://www.rtp.pt https://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8"
+  "$PLAYER --referrer http://www.rtp.pt https://streaming-live.rtp.pt/liveradio/antena280a/playlist.m3u8"
+  "$PLAYER --referrer http://www.rtp.pt https://streaming-live.rtp.pt/liveradio/antena380a/playlist.m3u8"
+  "$PLAYER rtmp://mcrwowza5.mcr.iol.pt/cidadefmlc/cidadefmlc.sdp" 
+  "$PLAYER rtmp://mcrwowza5.mcr.iol.pt/comerciallc/comerciallc.sdp"
   "$PLAYER http://162.210.196.217:8070/stream.mp3"
-  "$RTMPDUMP -r rtmp://mcrwowza3.mcr.iol.pt/m80lc -y m80lc.sdp | $PLAYER -"
+  "$PLAYER rtmp://mcrwowza3.mcr.iol.pt/m80lc/m80lc.sdp"
   "$PLAYER http://19573.live.streamtheworld.com:3690/MEGA_HITSAAC"
   "$PLAYER http://centova.radios.pt/proxy/495"
   "$PLAYER http://19573.live.streamtheworld.com:3690/RADIO_RENASCENCAAAC"
   "$PLAYER http://19573.live.streamtheworld.com:3690/RFMAAC"
   "$PLAYER http://ruc.midi-club.net:8000/"
-  "$RTMPDUMP -r rtmp://mcrwowza6.mcr.iol.pt/smoothlc -y smoothlc.sdp | $PLAYER -"
+  "$PLAYER rtmp://mcrwowza6.mcr.iol.pt/smoothlc/smoothlc.sdp"
   "$PLAYER http://tsfdirecto.tsf.pt/tsfdirecto.aac"
   "$PLAYER -user-agent 'Mozilla/5.0 (X11; Linux x86_64)' http://mcrscast.mcr.iol.pt/vodafone"
   "$PLAYER http://stream.radiozero.pt:8000/zero128.mp3"
@@ -43,7 +42,6 @@ STREAMS=(
 
 # check if dependencies exist
 type $PLAYER &>/dev/null || { echo "$PLAYER is not installed"; exit 1; }
-type $RTMPDUMP &>/dev/null || { echo "$RTMPDUMP is not installed"; exit 1; }
 
 PS3="Which radio do you want to listen? "
 select radio in "${TITLES[@]}";
