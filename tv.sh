@@ -41,7 +41,7 @@ STREAMS=(
   "$RTMPDUMP -r rtmp://rtppullswf2livefs.fplive.net --live -a rtppullswf2live-live -W http://www.rtp.pt/play/player.swf -y 2ch27h264 | $PLAYER -"
   "$PLAYER http://193.126.16.68:1935/livenlin4/mp4:2liveplncleanpub/playlist.m3u8"
   "$RTMPDUMP -r rtmp://213.13.26.13/live -W http://js.sapo.pt/Projects/SAPOPlayer/20161028R1/jwplayer.flash.swf -y portocanal | $PLAYER -"
-  "$PLAYER rtsp://ewns-hls-b-stream.hexaglobe.net/rtpeuronewslive/pt_vidan750_rtp.sdp"
+  "$PLAYER http://euronews-pt-p7-cdn.hexaglobe.net/94ce3a040643007dd3c2950436603334/5a2f43b0/euronews/euronews-euronews-website-web-responsive-2/ewnsabrptpri_por.smil/playlist.m3u8"
   "$PLAYER http://195.22.11.11:1935/ktv/ktv2/playlist.m3u8"
 )
 
