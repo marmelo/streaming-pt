@@ -28,7 +28,7 @@ STREAMS=(
   "$RTMPDUMP -r rtmp://ec24.rtp.pt/liveradio -y antena380a | $PLAYER -"
   "$RTMPDUMP -r rtmp://mcrwowza5.mcr.iol.pt/cidadefmlc -y cidadefmlc.sdp | $PLAYER -" 
   "$RTMPDUMP -r rtmp://mcrwowza5.mcr.iol.pt/comerciallc -y comerciallc.sdp | $PLAYER -"
-  "$PLAYER http://cp5.serverse.com:7104/"
+  "$PLAYER http://162.210.196.217:8070/stream.mp3"
   "$RTMPDUMP -r rtmp://mcrwowza3.mcr.iol.pt/m80lc -y m80lc.sdp | $PLAYER -"
   "$PLAYER http://19573.live.streamtheworld.com:3690/MEGA_HITSAAC"
   "$PLAYER http://19573.live.streamtheworld.com:3690/RADIO_RENASCENCAAAC"
