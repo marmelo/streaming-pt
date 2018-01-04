@@ -40,7 +40,7 @@ STREAMS=(
   "$PLAYER --referrer http://www.rtp.pt https://streaming-live.rtp.pt/liverepeater/smil:rtpafrica.smil/playlist.m3u8"
   "$PLAYER http://193.126.16.68:1935/livenlin4/mp4:2liveplncleanpub/playlist.m3u8"
   "$PLAYER rtmp://213.13.26.13/live/portocanal"
-  "$PLAYER http://euronews-pt-p7-cdn.hexaglobe.net/94ce3a040643007dd3c2950436603334/5a2f43b0/euronews/euronews-euronews-website-web-responsive-2/ewnsabrptpri_por.smil/playlist.m3u8"
+  "$PLAYER http://euronews-pt-b2-cdn.hexaglobe.net/c6d25d365f395f2d3f7083f4517e879c/5a4e8e0f/euronews/euronews-euronews-website-web-responsive-2/ewnsabrptbkp_por.smil/playlist.m3u8"
   "$PLAYER http://195.22.11.11:1935/ktv/ktv2/playlist.m3u8"
 )
 
