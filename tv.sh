@@ -3,7 +3,8 @@
 PLAYER="mpv"
 
 TITLES=(
-  "RTP 1"
+  "RTP 1 HD"
+  "RTP 1 SD"
   "RTP 2"
   "SIC"
   "TVI"
@@ -24,6 +25,7 @@ TITLES=(
 )
 
 STREAMS=(
+  "$PLAYER --referrer http://www.rtp.pt https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8"
   "$PLAYER --referrer http://www.rtp.pt https://streaming-live.rtp.pt/liverepeater/smil:rtp1.smil/playlist.m3u8"
   "$PLAYER --referrer http://www.rtp.pt https://streaming-live.rtp.pt/liverepeater/smil:rtp2.smil/playlist.m3u8"
   "$PLAYER http://live.impresa.pt/live/sic/sic540p.m3u8"
