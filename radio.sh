@@ -19,6 +19,7 @@ TITLES=(
   "TSF"
   "Vodafone"
   "Radio Zero"
+  "Rádio Radar"
 )
 
 STREAMS=(
@@ -38,6 +39,7 @@ STREAMS=(
   "$PLAYER http://tsfdirecto.tsf.pt/tsfdirecto.aac"
   "$PLAYER -user-agent 'Mozilla/5.0 (X11; Linux x86_64)' http://mcrscast.mcr.iol.pt/vodafone"
   "$PLAYER http://stream.radiozero.pt:8000/zero128.mp3"
+  "$PLAYER http://centova.radios.pt:8497/stream"
 )
 
 # check if dependencies exist
