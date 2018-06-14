@@ -28,10 +28,10 @@ STREAMS=(
   "--referrer http://www.rtp.pt https://streaming-live.rtp.pt/liverepeater/smil:rtp1.smil/playlist.m3u8"
   "--referrer http://www.rtp.pt https://streaming-live.rtp.pt/liverepeater/smil:rtp2.smil/playlist.m3u8"
   "http://live.impresa.pt/live/sic/sic540p.m3u8"
-  "$(wget http://tviplayer.iol.pt/direto/TVI -O - -o /dev/null | grep videoUrl\ = |cut -d\" -f2|head -n 1)"
+  "__tvi"
   "--referrer http://www.rtp.pt https://streaming-live.rtp.pt/livetvhlsDVR/rtpndvr.smil/playlist.m3u8"
   "http://live.impresa.pt/live/sicnot/sicnot540p.m3u8"
-  "$(wget http://tviplayer.iol.pt/direto/TVI24 -O - -o /dev/null | grep videoUrl\ = |cut -d\" -f2|head -n 1)"
+  "__tvi24"
   "--referrer http://www.rtp.pt https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8"
   "--referrer http://www.rtp.pt https://streaming-live.rtp.pt/liverepeater/smil:rtpmem.smil/playlist.m3u8"
   "--referrer http://www.rtp.pt https://streaming-live.rtp.pt/liverepeater/smil:rtpi.smil/playlist.m3u8"
@@ -42,9 +42,14 @@ STREAMS=(
   "http://live.impresa.pt/live/sick/sick540p.m3u8"
   "http://193.126.16.68:1935/livenlin4/mp4:2liveplncleanpub/playlist.m3u8"
   "rtmp://213.13.26.13/live/portocanal"
-  "$(wget $(wget http://pt.euronews.com/api/watchlive.json -O - -o /dev/null | cut -d\" -f4 | sed 's/\\//g') -O - -o /dev/null | cut -d\" -f12 | sed 's/\\//g')"
+  "__euronews"
   "http://195.22.11.11:1935/ktv/ktv2/playlist.m3u8"
 )
+
+# dynamic streams
+__tvi() { echo $(wget http://tviplayer.iol.pt/direto/TVI -O - -o /dev/null | grep videoUrl\ = | cut -d\" -f2 | head -n 1); }
+__tvi24() { echo $(wget http://tviplayer.iol.pt/direto/TVI24 -O - -o /dev/null | grep videoUrl\ = | cut -d\" -f2 | head -n 1); }
+__euronews() { echo $(wget $(wget http://pt.euronews.com/api/watchlive.json -O - -o /dev/null | cut -d\" -f4 | sed 's/\\//g') -O - -o /dev/null | cut -d\" -f12 | sed 's/\\//g'); }
 
 # check if dependencies exist
 type $PLAYER &>/dev/null || { echo "$PLAYER is not installed"; exit 1; }
@@ -56,7 +61,12 @@ do
     for i in ${!TITLES[@]}
     do
       if [ "${TITLES[i]}" = "$choice" ]; then
-        $PLAYER ${STREAMS[i]}
+        # check if dynamic stream
+        if [ "${STREAMS[i]:0:2}" = "__" ]; then
+          $PLAYER $(${STREAMS[i]})
+        else
+          $PLAYER ${STREAMS[i]}
+        fi
         break
       fi
     done
