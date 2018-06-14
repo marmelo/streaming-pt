@@ -35,10 +35,11 @@ Which TV channel do you want to watch?
 
 ```bash
 $ ./radio.sh
-1) Antena1       5) Comercial    9) MEO Music   13) Smooth
-2) Antena2       6) Kiss FM     10) Renascenca  14) TSF
-3) Antena3       7) M80         11) RFM         15) Vodafone
-4) Cidade FM     8) Mega Hits   12) RUC         16) Radio Zero
+1) Antena1       6) Kiss FM     11) Renascenca  16) Vodafone
+2) Antena2       7) M80         12) RFM         17) Zero
+3) Antena3       8) Mega Hits   13) RUC
+4) Cidade FM     9) MEO Music   14) Smooth
+5) Comercial    10) Radar       15) TSF
 Which radio do you want to listen? 
 ```
 

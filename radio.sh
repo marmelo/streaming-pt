@@ -12,14 +12,14 @@ TITLES=(
   "M80"
   "Mega Hits"
   "MEO Music"
+  "Radar"
   "Renascenca"
   "RFM"
   "RUC"
   "Smooth"
   "TSF"
   "Vodafone"
-  "Radio Zero"
-  "Rádio Radar"
+  "Zero"
 )
 
 STREAMS=(
@@ -32,6 +32,7 @@ STREAMS=(
   "$PLAYER rtmp://mcrwowza3.mcr.iol.pt/m80lc/m80lc.sdp"
   "$PLAYER http://19573.live.streamtheworld.com:3690/MEGA_HITSAAC"
   "$PLAYER http://centova.radios.pt/proxy/495"
+  "$PLAYER http://centova.radios.pt:8497/stream"
   "$PLAYER http://19573.live.streamtheworld.com:3690/RADIO_RENASCENCAAAC"
   "$PLAYER http://19573.live.streamtheworld.com:3690/RFMAAC"
   "$PLAYER http://ruc.midi-club.net:8000/"
@@ -39,7 +40,6 @@ STREAMS=(
   "$PLAYER http://tsfdirecto.tsf.pt/tsfdirecto.aac"
   "$PLAYER -user-agent 'Mozilla/5.0 (X11; Linux x86_64)' http://mcrscast.mcr.iol.pt/vodafone"
   "$PLAYER http://stream.radiozero.pt:8000/zero128.mp3"
-  "$PLAYER http://centova.radios.pt:8497/stream"
 )
 
 # check if dependencies exist
