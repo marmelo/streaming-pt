@@ -42,7 +42,7 @@ STREAMS=(
   "http://live.impresa.pt/live/sick/sick540p.m3u8"
   "http://193.126.16.68:1935/livenlin4/mp4:2liveplncleanpub/playlist.m3u8"
   "rtmp://213.13.26.13/live/portocanal"
-  "http://euronews-pt-p7-cdn.hexaglobe.net/94ce3a040643007dd3c2950436603334/5a2f43b0/euronews/euronews-euronews-website-web-responsive-2/ewnsabrptpri_por.smil/playlist.m3u8"
+  "$(wget $(wget http://pt.euronews.com/api/watchlive.json -O - -o /dev/null | cut -d\" -f4 | sed 's/\\//g') -O - -o /dev/null | cut -d\" -f12 | sed 's/\\//g')"
   "http://195.22.11.11:1935/ktv/ktv2/playlist.m3u8"
 )
 
