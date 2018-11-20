@@ -41,7 +41,7 @@ STREAMS=(
   "http://live.impresa.pt/live/sicrad/sicrad540p.m3u8"
   "http://live.impresa.pt/live/sick/sick540p.m3u8"
   "http://193.126.16.68:1935/livenlin4/mp4:2liveplncleanpub/playlist.m3u8"
-  "rtmp://213.13.26.13/live/portocanal"
+  "--referrer http://sapo.pt/ https://streamer-b02.videos.sapo.pt/live/portocanal/playlist.m3u8"
   "__euronews"
   "http://195.22.11.11:1935/ktv/ktv2/playlist.m3u8"
 )
