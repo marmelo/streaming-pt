@@ -45,8 +45,8 @@ STREAMS=(
 )
 
 # dynamic streams
-__tvi() { echo $(wget http://tviplayer.iol.pt/direto/TVI -O - -o /dev/null | grep videoUrl\ = | cut -d\" -f2 | head -n 1); }
-__tvi24() { echo $(wget http://tviplayer.iol.pt/direto/TVI24 -O - -o /dev/null | grep videoUrl\ = | cut -d\" -f2 | head -n 1); }
+__tvi() { echo $(wget https://tviplayer.iol.pt/pages/ajax/canaltk.html?canal=TVI -O - -o /dev/null); }
+__tvi24() { echo $(wget wget https://tviplayer.iol.pt/pages/ajax/canaltk.html?canal=TVI24 -O - -o /dev/null); }
 __euronews() { echo $(wget http:$(wget http://pt.euronews.com/api/watchlive.json -O - -o /dev/null | cut -d\" -f4 | sed 's/\\//g') -O - -o /dev/null | cut -d\" -f12 | sed 's/\\//g'); }
 
 # check if dependencies exist
