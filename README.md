@@ -37,8 +37,8 @@ $ ./radio.sh
 1) Antena1       6) Kiss FM     11) Radar       16) TSF
 2) Antena2       7) M80         12) Renascenca  17) Vodafone
 3) Antena3       8) Mega Hits   13) RFM         18) Zero
-4) Cidade FM     9) MEO Music   14) RUC
-5) Comercial    10) Oxigénio    15) Smooth
+4) Cidade FM     9) MEO Music   14) RUC         19) Nova Era
+5) Comercial    10) Oxigénio    15) Smooth      20) Orbital
 Which radio do you want to listen? 
 ```
 
