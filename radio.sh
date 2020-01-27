@@ -38,7 +38,7 @@ STREAMS=(
   "http://centova.radios.pt:9478"
   "http://centova.radios.pt:8401"
   "https://proic1.evspt.com/oxigenio_aac"
-  "http://centova.radios.pt:8497/stream"
+  "https://proic1.evspt.com/radar_aac"
   "http://20723.live.streamtheworld.com:3690/RADIO_RENASCENCAAAC"
   "http://20133.live.streamtheworld.com:3690/RFMAAC"
   "http://ruc.midi-club.net:8000/"
