@@ -23,6 +23,7 @@ TITLES=(
   "TSF"
   "Vodafone"
   "Zero"
+  "Rádio Douro Nacional"
 )
 
 STREAMS=(
@@ -46,6 +47,7 @@ STREAMS=(
   "http://tsfdirecto.tsf.pt/tsfdirecto.aac"
   "-user-agent 'Mozilla/5.0 (X11; Linux x86_64)' http://mcrscast.mcr.iol.pt/vodafone"
   "http://stream.radiozero.pt:8000/zero128.mp3"
+  "http://95.217.75.38:9796/"
 )
 
 # check if dependencies exist
