@@ -26,9 +26,9 @@ TITLES=(
 )
 
 STREAMS=(
-  "--referrer='http://www.rtp.pt' https://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8"
-  "--referrer='http://www.rtp.pt' https://streaming-live.rtp.pt/liveradio/antena280a/playlist.m3u8"
-  "--referrer='http://www.rtp.pt' https://streaming-live.rtp.pt/liveradio/antena380a/playlist.m3u8"
+  "https://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8"
+  "https://streaming-live.rtp.pt/liveradio/antena280a/playlist.m3u8"
+  "https://streaming-live.rtp.pt/liveradio/antena380a/playlist.m3u8"
   "http://mcrwowza5.mcr.iol.pt/cidade/ngrp:cidade.stream_all/playlist.m3u8"
   "https://mcrwowza5.mcr.iol.pt/comercial/ngrp:comercial.stream_all/playlist.m3u8"
   "http://162.210.196.217:8070/stream.mp3"
