@@ -26,9 +26,9 @@ TITLES=(
 )
 
 STREAMS=(
-  "--referrer http://www.rtp.pt https://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8"
-  "--referrer http://www.rtp.pt https://streaming-live.rtp.pt/liveradio/antena280a/playlist.m3u8"
-  "--referrer http://www.rtp.pt https://streaming-live.rtp.pt/liveradio/antena380a/playlist.m3u8"
+  "--referrer='http://www.rtp.pt' https://streaming-live.rtp.pt/liveradio/antena180a/playlist.m3u8"
+  "--referrer='http://www.rtp.pt' https://streaming-live.rtp.pt/liveradio/antena280a/playlist.m3u8"
+  "--referrer='http://www.rtp.pt' https://streaming-live.rtp.pt/liveradio/antena380a/playlist.m3u8"
   "http://mcrwowza5.mcr.iol.pt/cidade/ngrp:cidade.stream_all/playlist.m3u8"
   "https://mcrwowza5.mcr.iol.pt/comercial/ngrp:comercial.stream_all/playlist.m3u8"
   "http://162.210.196.217:8070/stream.mp3"
@@ -44,7 +44,7 @@ STREAMS=(
   "http://ruc.midi-club.net:8000/"
   "http://mcrwowza3.mcr.iol.pt/smooth/ngrp:smooth.stream_all/playlist.m3u8"
   "http://tsfdirecto.tsf.pt/tsfdirecto.aac"
-  "-user-agent 'Mozilla/5.0 (X11; Linux x86_64)' http://mcrscast.mcr.iol.pt/vodafone"
+  "--user-agent='Mozilla/5.0 (X11; Linux x86_64)' http://mcrscast.mcr.iol.pt/vodafone"
   "http://stream.radiozero.pt:8000/zero128.mp3"
 )
 
