@@ -1,7 +1,9 @@
 streaming-pt
 ============
 
-Live Portuguese TV and radio.
+Live Portuguese TV and radio.  
+
+Please check https://antena.pt and enjoy the streams online.
 
 **Disclaimer:**  
 All streams are official.
