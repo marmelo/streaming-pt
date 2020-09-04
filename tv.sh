@@ -53,7 +53,6 @@ __euronews() { echo $(wget http:$(wget http://pt.euronews.com/api/watchlive.json
 
 #random string for user-agent to avoid blacklists
 USER_AGENT=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 50)
-echo $USER_AGENT
 
 # check if dependencies exist
 type $PLAYER &>/dev/null || { echo "$PLAYER is not installed"; exit 1; }
