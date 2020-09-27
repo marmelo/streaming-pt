@@ -51,6 +51,9 @@ __tvi() { echo "https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAu
 __tvi24() { echo "https://video-auth6.iol.pt/live_tvi24/live_tvi24/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
 __euronews() { echo $(wget http:$(wget http://pt.euronews.com/api/watchlive.json -O - -o /dev/null | cut -d\" -f4 | sed 's/\\//g') -O - -o /dev/null | cut -d\" -f12 | sed 's/\\//g'); }
 
+#random string for user-agent to avoid blacklists
+USER_AGENT=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 50)
+
 # check if dependencies exist
 type $PLAYER &>/dev/null || { echo "$PLAYER is not installed"; exit 1; }
 
@@ -63,9 +66,9 @@ do
       if [ "${TITLES[i]}" = "$choice" ]; then
         # check if dynamic stream
         if [ "${STREAMS[i]:0:2}" = "__" ]; then
-          $PLAYER $(${STREAMS[i]})
+          $PLAYER --user-agent="$USER_AGENT" $(${STREAMS[i]})
         else
-          $PLAYER ${STREAMS[i]}
+          $PLAYER --user-agent="$USER_AGENT" ${STREAMS[i]}
         fi
         break
       fi
