@@ -25,18 +25,18 @@ TITLES=(
 )
 
 STREAMS=(
-  "https://streaming-live.rtp.pt/liverepeater/smil:rtp1.smil/playlist.m3u8"
-  "https://streaming-live.rtp.pt/liverepeater/smil:rtp2.smil/playlist.m3u8"
+  "__rtp rtp1"
+  "__rtp rtp2"
   "http://live.impresa.pt/live/sic/sic.m3u8"
   "__tvi"
-  "https://streaming-live.rtp.pt/livetvhlsDVR/rtpndvr.smil/playlist.m3u8"
+  "__rtp rtp3"
   "http://live.impresa.pt/live/sicnot/sicnot.m3u8"
   "__tvi24"
-  "https://streaming-live.rtp.pt/liverepeater/smil:rtpmem.smil/playlist.m3u8"
-  "https://streaming-live.rtp.pt/liverepeater/smil:rtpi.smil/playlist.m3u8"
-  "https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8"
-  "https://streaming-live.rtp.pt/liverepeater/smil:rtpacores.smil/playlist.m3u8"
-  "https://streaming-live.rtp.pt/liverepeater/smil:rtpafrica.smil/playlist.m3u8"
+  "__rtp rtpmemoria"
+  "__rtp rtpinternacional"
+  "__rtp rtpmadeira"
+  "__rtp rtpacores"
+  "__rtp rtpafrica"
   "http://live.impresa.pt/live/sicrad/sicrad.m3u8"
   "http://live.impresa.pt/live/siccaras/siccaras.m3u8"
   "http://live.impresa.pt/live/sick/sick.m3u8"
@@ -47,6 +47,7 @@ STREAMS=(
 )
 
 # dynamic streams
+__rtp() { echo $(wget https://www.rtp.pt/play/direto/$1 -O - -o /dev/null | grep hls | sed 's/.*hls: "//g' | sed 's/".*//g'); }
 __tvi() { echo "https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
 __tvi24() { echo "https://video-auth6.iol.pt/live_tvi24/live_tvi24/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
 __euronews() { echo $(wget http:$(wget http://pt.euronews.com/api/watchlive.json -O - -o /dev/null | cut -d\" -f4 | sed 's/\\//g') -O - -o /dev/null | cut -d\" -f12 | sed 's/\\//g'); }
