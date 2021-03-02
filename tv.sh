@@ -46,7 +46,7 @@ STREAMS=(
 function urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
 
 # dynamic streams
-__rtp() { urldecode $(wget https://www.rtp.pt/play/direto/$1 -O - -o /dev/null | grep hls | sed 's/.*\[//g' | sed 's/\].*//g' | sed 's/[",]//g'); }
+__rtp() { urldecode $(wget https://www.rtp.pt/play/direto/$1 -O - -o /dev/null | grep hls | sed 's/.*hls: //g' | sed 's/, dash.*//g' | sed 's/.*\[//g' | sed 's/\].*//g' | sed 's/[",]//g'); }
 __tvi() { echo "https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
 __tvi24() { echo "https://video-auth6.iol.pt/live_tvi24/live_tvi24/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
 __euronews() { echo $(wget http:$(wget http://pt.euronews.com/api/watchlive.json -O - -o /dev/null | cut -d\" -f4 | sed 's/\\//g') -O - -o /dev/null | cut -d\" -f12 | sed 's/\\//g'); }
