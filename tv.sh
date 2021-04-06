@@ -36,7 +36,7 @@ STREAMS=(
   "__rtp rtpafrica"
   "__rtp rtpinternacional"
   "http://live.impresa.pt/live/sicint/sicint.m3u8"
-  "https://5e4fc274d9d46.streamlock.net/livenlin4/2liveartvpub/playlist.m3u8"
+  "https://playout175.livextend.cloud/livenlin4/2liveartvpub/playlist.m3u8"
   "--referrer='http://sapo.pt/' https://streamer-b02.videos.sapo.pt/live/portocanal/playlist.m3u8"
   "__euronews"
   "http://195.22.11.11:1935/ktv/ktv2/playlist.m3u8"
