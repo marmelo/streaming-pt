@@ -9,7 +9,7 @@ TITLES=(
   "TVI"
   "RTP 3"
   "SIC Noticias"
-  "TVI24"
+  "CNN Portugal"
   "RTP Memoria"
   "RTP Madeira"
   "RTP Acores"
