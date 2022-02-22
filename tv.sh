@@ -25,10 +25,10 @@ TITLES=(
 STREAMS=(
   "__rtp rtp1"
   "__rtp rtp2"
-  "http://live.impresa.pt/live/sic/sic.m3u8"
+  "https://sic.live.impresa.pt/sic.m3u8"
   "__tvi"
   "__rtp rtp3"
-  "http://live.impresa.pt/live/sicnot/sicnot.m3u8"
+  "https://sicnot.live.impresa.pt/sicnot.m3u8"
   "__tvi24"
   "__rtp rtpmemoria"
   "__rtp rtpmadeira"
