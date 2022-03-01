@@ -28,7 +28,7 @@ STREAMS=(
   "https://sic.live.impresa.pt/sic.m3u8"
   "__tvi"
   "__rtp rtp3"
-  "https://sicnot.live.impresa.pt/sicnot.m3u8"
+  "https://sicnot.live.impresa.pt/sicnot540p.m3u8"
   "__tvi24"
   "__rtp rtpmemoria"
   "__rtp rtpmadeira"
