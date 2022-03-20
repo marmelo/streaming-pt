@@ -48,7 +48,11 @@ function urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
 # dynamic streams
 __rtp() { urldecode $(wget https://www.rtp.pt/play/direto/$1 -O - -o /dev/null | grep hls | sed 's/.*hls: //g' | sed 's/, dash.*//g' | sed 's/.*\[//g' | sed 's/\].*//g' | sed 's/[",]//g'); }
 __tvi() { echo "https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
-__tvi24() { echo "https://video-auth6.iol.pt/live_tvi24/live_tvi24/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
+__tvi24() { echo "https://video-auth2.iol.pt/live_cnn/live_cnn/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
+
+
+#https://video-auth2.iol.pt/live_cnn/live_cnn/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9My8xOC8yMDIyIDc6NTc6NDYgQU0maGFzaF92YWx1ZT1BOXZMWlBOVVllWEN0UEt2aHFhWXhnPT0mdmFsaWRtaW51dGVzPTE0NDAmaWQ9NDRkNjQ1MGEtNWZjNi00NTU4LTliM2ItNGRjYmVlOTZlNDJl
+
 
 #random string for user-agent to avoid blacklists
 USER_AGENT=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 50)
