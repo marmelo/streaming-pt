@@ -8,14 +8,16 @@ TITLES=(
   "SIC"
   "TVI"
   "RTP 3"
-  "SIC Noticias"
+  "SIC Notícias"
   "CNN Portugal"
-  "RTP Memoria"
+  "RTP Memória"
   "RTP Madeira"
-  "RTP Acores"
-  "RTP Africa"
+  "RTP Açores"
+  "RTP África"
   "RTP Internacional"
-  "SIC Internacional"
+  "TVI Internacional"
+  "TVI Ficção"
+  "TVI Reality"
   "ARTV"
   "Porto Canal"
   "Euronews"
@@ -23,19 +25,21 @@ TITLES=(
 )
 
 STREAMS=(
-  "__rtp rtp1"
-  "__rtp rtp2"
+  "https://streaming-live-app.rtp.pt/liverepeater/smil:rtp1HD.smil/rtp_playlist.m3u8"
+  "https://streaming-live-app.rtp.pt/liverepeater/smil:rtp2HD.smil/rtp_playlist.m3u8"
   "https://sic.live.impresa.pt/sic.m3u8"
   "__tvi"
-  "__rtp rtp3"
+  "https://streaming-live-app.rtp.pt/liverepeater/smil:rtpnHD.smil/rtp_playlist.m3u8"
   "https://sicnot.live.impresa.pt/sicnot.m3u8"
-  "__tvi24"
+  "__cnnpt"
   "__rtp rtpmemoria"
   "__rtp rtpmadeira"
   "__rtp rtpacores"
   "__rtp rtpafrica"
   "__rtp rtpinternacional"
-  "http://live.impresa.pt/live/sicint/sicint.m3u8"
+  "__tviint"
+  "https://video-auth2.iol.pt/live_tvi_ficcao/live_tvi_ficcao/edge_servers/tvificcao-720p/playlist.m3u8"
+  "https://video-auth2.iol.pt/live_tvi_direct/live_tvi_direct/edge_servers/tvireality-480p/playlist.m3u8"
   "https://playout175.livextend.cloud/livenlin4/2liveartvpub/playlist.m3u8"
   "--referrer='http://sapo.pt/' https://streamer-b02.videos.sapo.pt/live/portocanal/playlist.m3u8"
   "https://rakuten-euronews-8-pt.samsung.wurl.com/manifest/playlist.m3u8"
@@ -48,7 +52,8 @@ function urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
 # dynamic streams
 __rtp() { urldecode $(wget https://www.rtp.pt/play/direto/$1 -O - -o /dev/null | grep hls | sed 's/.*hls: //g' | sed 's/, dash.*//g' | sed 's/.*\[//g' | sed 's/\].*//g' | sed 's/[",]//g'); }
 __tvi() { echo "https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
-__tvi24() { echo "https://video-auth6.iol.pt/live_tvi24/live_tvi24/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
+__cnnpt() { echo "https://video-auth6.iol.pt/live_tvi24/live_tvi24/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
+__tviint() { echo "https://video-auth6.iol.pt/live_tvi_internacional/live_tvi_internacional/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
 
 #random string for user-agent to avoid blacklists
 USER_AGENT=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 50)
