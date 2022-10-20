@@ -21,6 +21,7 @@ TITLES=(
   "ARTV"
   "Porto Canal"
   "Euronews"
+  "Canal 11"
   "Kuriakos TV"
 )
 
@@ -43,6 +44,7 @@ STREAMS=(
   "https://playout175.livextend.cloud/livenlin4/2liveartvpub/playlist.m3u8"
   "--referrer='http://sapo.pt/' https://streamer-b02.videos.sapo.pt/live/portocanal/playlist.m3u8"
   "https://rakuten-euronews-8-pt.samsung.wurl.com/manifest/playlist.m3u8"
+  "https://d2ve4fchffi4n1.cloudfront.net/out/v1/df356edd16f3434ab417f2c48cb1d516/index.m3u8"
   "http://195.22.11.11:1935/ktv/ktv2/playlist.m3u8"
 )
 
