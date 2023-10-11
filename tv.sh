@@ -28,10 +28,10 @@ TITLES=(
 STREAMS=(
   "https://streaming-live-app.rtp.pt/liverepeater/smil:rtp1HD.smil/rtp_playlist.m3u8"
   "https://streaming-live-app.rtp.pt/liverepeater/smil:rtp2HD.smil/rtp_playlist.m3u8"
-  "https://d1zx6l1dn8vaj5.cloudfront.net/out/v1/b89cc37caa6d418eb423cf092a2ef970/index.m3u8"
+  "--referrer=https://sic.pt/ https://sic.live.impresa.pt/sic.m3u8"
   "__tvi"
   "https://streaming-live-app.rtp.pt/liverepeater/smil:rtpnHD.smil/rtp_playlist.m3u8"
-  "https://sicnot.live.impresa.pt/sicnot.m3u8"
+  "--referrer=https://sic.pt/ https://sicnot.live.impresa.pt/sicnot.m3u8"
   "__cnnportugal"
   "__rtp rtpmemoria"
   "__rtp rtpmadeira"
