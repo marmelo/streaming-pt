@@ -21,7 +21,6 @@ TITLES=(
   "RUC"
   "Smooth"
   "TSF"
-  "Zero"
 )
 
 STREAMS=(
@@ -43,7 +42,6 @@ STREAMS=(
   "http://ruc.midi-club.net:8000/"
   "http://mcrwowza3.mcr.iol.pt/smooth/smil:smooth.smil/playlist.m3u8"
   "http://tsfdirecto.tsf.pt/tsfdirecto.aac"
-  "http://stream.radiozero.pt:8000/zero128.mp3"
 )
 
 # check if dependencies exist
