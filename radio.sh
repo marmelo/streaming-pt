@@ -21,7 +21,6 @@ TITLES=(
   "RUC"
   "Smooth"
   "TSF"
-  "Vodafone"
   "Zero"
 )
 
@@ -44,7 +43,6 @@ STREAMS=(
   "http://ruc.midi-club.net:8000/"
   "http://mcrwowza3.mcr.iol.pt/smooth/smil:smooth.smil/playlist.m3u8"
   "http://tsfdirecto.tsf.pt/tsfdirecto.aac"
-  "--user-agent='Mozilla/5.0 (X11; Linux x86_64)' http://mcrscast.mcr.iol.pt/vodafone"
   "http://stream.radiozero.pt:8000/zero128.mp3"
 )
 
