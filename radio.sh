@@ -21,6 +21,7 @@ TITLES=(
   "RUC"
   "Smooth"
   "TSF"
+  "Super Bock Super Rock"
 )
 
 STREAMS=(
@@ -42,6 +43,7 @@ STREAMS=(
   "http://ruc.midi-club.net:8000/"
   "http://mcrwowza3.mcr.iol.pt/smooth/smil:smooth.smil/playlist.m3u8"
   "http://tsfdirecto.tsf.pt/tsfdirecto.aac"
+  "https://centova.radios.pt/proxy/435"
 )
 
 # check if dependencies exist
