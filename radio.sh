@@ -47,18 +47,31 @@ STREAMS=(
 # check if dependencies exist
 type $PLAYER &>/dev/null || { echo "$PLAYER is not installed"; exit 1; }
 
-PS3="Which radio do you want to listen? "
-select radio in "${TITLES[@]}";
-do
-  if [[ -n $radio ]]; then
-    for i in ${!TITLES[@]}
+load_stream(){
+  for i in ${!TITLES[@]}
     do
-      if [ "${TITLES[i]}" = "$radio" ]; then
-        $PLAYER ${STREAMS[i]}
+      if [ "${TITLES[i]}" = "$*" ]; then
+        # check if dynamic stream
+        if [ "${STREAMS[i]:0:2}" = "__" ]; then
+          $PLAYER $(${STREAMS[i]})
+        else
+          $PLAYER ${STREAMS[i]}
+        fi
         break
       fi
     done
-  else
-    echo "Invalid selection."
-  fi
-done
+}
+
+PS3="Which radio do you want to listen? "
+if [[ -n "$*" ]]; then
+  load_stream "$*"
+else
+  select radio in "${TITLES[@]}";
+  do
+    if [[ -n $radio ]]; then
+      load_stream $radio
+    else
+      echo "Invalid selection."
+    fi
+  done
+fi

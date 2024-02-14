@@ -63,13 +63,10 @@ USER_AGENT=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 50)
 # check if dependencies exist
 type $PLAYER &>/dev/null || { echo "$PLAYER is not installed"; exit 1; }
 
-PS3="Which TV channel do you want to watch? "
-select choice in "${TITLES[@]}";
-do
-  if [[ -n $choice ]]; then
-    for i in ${!TITLES[@]}
+load_stream(){
+  for i in ${!TITLES[@]}
     do
-      if [ "${TITLES[i]}" = "$choice" ]; then
+      if [ "${TITLES[i]}" = "$*" ]; then
         # check if dynamic stream
         if [ "${STREAMS[i]:0:2}" = "__" ]; then
           $PLAYER --user-agent="$USER_AGENT" $(${STREAMS[i]})
@@ -79,7 +76,18 @@ do
         break
       fi
     done
-  else
-    echo "Invalid selection."
-  fi
-done
+}
+
+PS3="Which TV channel do you want to watch? "
+if [[ -n "$1" ]]; then
+  load_stream "$*"
+else
+  select choice in "${TITLES[@]}";
+  do
+    if [[ -n $choice ]]; then
+      load_stream $choice
+    else
+      echo "Invalid selection."
+    fi
+  done
+fi
