@@ -1,6 +1,10 @@
 #!/bin/bash
 
-PLAYER="mpv"
+if [[ -z "${PLAYER}" ]]; then
+  PLAYER="mpv"
+else
+  MY_SCRIPT_VARIABLE="${PLAYER}"
+fi
 
 TITLES=(
   "Antena1"
