@@ -23,13 +23,29 @@ Usage
 
 ```bash
 $ ./tv.sh 
-1) RTP 1           7) TVI24              13) SIC Internacional
-2) RTP 2           8) RTP Memoria        14) ARTV
-3) SIC             9) RTP Madeira        15) Porto Canal
-4) TVI            10) RTP Acores         16) Euronews
-5) RTP 3          11) RTP Africa         17) Kuriakos TV
-6) SIC Noticias   12) RTP Internacional
-Which TV channel do you want to watch?
+Canais disponíveis:
+ 1. RTP 1
+ 2. RTP 2
+ 3. SIC
+ 4. TVI
+ 5. RTP 3
+ 6. SIC Notícias
+ 7. CNN Portugal
+ 8. RTP Memória
+ 9. RTP Madeira
+10. RTP Açores
+11. RTP África
+12. RTP Internacional
+13. TVI Internacional
+14. TVI Ficção
+15. TVI Reality
+16. ARTV
+17. Porto Canal
+18. Euronews
+19. Canal 11
+20. Kuriakos TV
+
+Digite o nº do canal de TV que deseja ver (ou 'x' para sair): x
 ```
 
 ```bash
