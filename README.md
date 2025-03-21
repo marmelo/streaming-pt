@@ -23,23 +23,53 @@ Usage
 
 ```bash
 $ ./tv.sh 
-1) RTP 1           7) TVI24              13) SIC Internacional
-2) RTP 2           8) RTP Memoria        14) ARTV
-3) SIC             9) RTP Madeira        15) Porto Canal
-4) TVI            10) RTP Acores         16) Euronews
-5) RTP 3          11) RTP Africa         17) Kuriakos TV
-6) SIC Noticias   12) RTP Internacional
-Which TV channel do you want to watch?
+Canais disponíveis:
+ 1. RTP 1
+ 2. RTP 2
+ 3. SIC
+ 4. TVI
+ 5. RTP 3
+ 6. SIC Notícias
+ 7. CNN Portugal
+ 8. RTP Memória
+ 9. RTP Madeira
+10. RTP Açores
+11. RTP África
+12. RTP Internacional
+13. TVI Internacional
+14. TVI Ficção
+15. TVI Reality
+16. ARTV
+17. Porto Canal
+18. Euronews
+19. Canal 11
+20. Kuriakos TV
+
+Digite o nº do canal de TV que deseja ver (ou 'x' para sair): x
 ```
 
 ```bash
-$ ./radio.sh
-1) Antena1       6) Kiss FM     11) Orbital     16) RUC
-2) Antena2       7) M80         12) Oxigénio    17) Smooth
-3) Antena3       8) Mega Hits   13) Radar       18) TSF
-4) Cidade FM     9) MEO Music   14) Renascenca  19) Vodafone
-5) Comercial    10) Nova Era    15) RFM         20) Zero
-Which radio do you want to listen? 
+Rádios disponíveis:
+ 1. Antena1
+ 2. Antena2
+ 3. Antena3
+ 4. Cidade FM
+ 5. Comercial
+ 6. Kiss FM
+ 7. M80
+ 8. Mega Hits
+ 9. MEO Music
+10. Nova Era
+11. Orbital
+12. Oxigénio
+13. Radar
+14. Renascenca
+15. RFM
+16. RUC
+17. Smooth
+18. TSF
+
+Digite o nº da rádio que deseja ouvir (ou 'x' para sair): x
 ```
 
 
@@ -61,6 +91,8 @@ $ pacman -S mpv
 $ brew install mpv
 $ port install mpv
 ```
+
+Note that some channels only play if you have recent versions of ffmpeg installed.
 
 How to catch RTMP streams
 -----
