@@ -49,13 +49,27 @@ Digite o nº do canal de TV que deseja ver (ou 'x' para sair): x
 ```
 
 ```bash
-$ ./radio.sh
-1) Antena1       6) Kiss FM     11) Orbital     16) RUC
-2) Antena2       7) M80         12) Oxigénio    17) Smooth
-3) Antena3       8) Mega Hits   13) Radar       18) TSF
-4) Cidade FM     9) MEO Music   14) Renascenca  19) Vodafone
-5) Comercial    10) Nova Era    15) RFM         20) Zero
-Which radio do you want to listen? 
+Rádios disponíveis:
+ 1. Antena1
+ 2. Antena2
+ 3. Antena3
+ 4. Cidade FM
+ 5. Comercial
+ 6. Kiss FM
+ 7. M80
+ 8. Mega Hits
+ 9. MEO Music
+10. Nova Era
+11. Orbital
+12. Oxigénio
+13. Radar
+14. Renascenca
+15. RFM
+16. RUC
+17. Smooth
+18. TSF
+
+Digite o nº da rádio que deseja ouvir (ou 'x' para sair): x
 ```
 
 
