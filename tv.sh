@@ -29,8 +29,8 @@ TITLES=(
 
 # Defines URLs or dynamic stream commands corresponding to each channel in TITLES
 STREAMS=(
-  "--demuxer-lavf-o=cenc_decryption_key=a2226def4bc8f249de2daf36b7c12b1e https://streaming-live.rtp.pt/liverepeater/rtpClean1HD.smil/manifest.mpd?tk=1742529600_ddc6494754c1deab87fdea0850b77ca167b81597"
-  "https://streaming-live-app.rtp.pt/liverepeater/smil:rtp2HD.smil/rtp_playlist.m3u8"
+  "--demuxer-lavf-o=cenc_decryption_key=a2226def4bc8f249de2daf36b7c12b1e https://streaming-live.rtp.pt/liverepeater/rtpClean1HD.smil/manifest.mpd"
+  "--demuxer-lavf-o=cenc_decryption_key=f1eb56955a79e555b1f8b96aec3afa25 https://streaming-live.rtp.pt/liverepeater/rtpClean2HD.smil/manifest.mpd"
   "https://d1zx6l1dn8vaj5.cloudfront.net/out/v1/b89cc37caa6d418eb423cf092a2ef970/index.m3u8"
   "__tvi"
   "https://streaming-live-app.rtp.pt/liverepeater/smil:rtpnHD.smil/rtp_playlist.m3u8"
