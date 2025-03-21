@@ -21,6 +21,7 @@ TITLES=(
   "RUC"
   "Smooth"
   "TSF"
+  "Rádio Clube de Lamego"
 )
 
 STREAMS=(
@@ -42,6 +43,7 @@ STREAMS=(
   "http://ruc.midi-club.net:8000/"
   "http://mcrwowza3.mcr.iol.pt/smooth/smil:smooth.smil/playlist.m3u8"
   "http://tsfdirecto.tsf.pt/tsfdirecto.aac"
+  "http://109.71.41.6:8110/stream"
 )
 
 # check if dependencies exist
