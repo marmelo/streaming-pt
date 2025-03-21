@@ -1,7 +1,7 @@
 streaming-pt
 ============
 
-Live Portuguese TV and radio.
+Live Portuguese TV and radio.  
 
 **Disclaimer:**  
 All streams are official.
@@ -23,12 +23,12 @@ Usage
 
 ```bash
 $ ./tv.sh 
-1) RTP 1                7) TVI24              13) SIC Radical
-2) RTP 2                8) RTP Memoria        14) SIC K
-3) SIC                  9) RTP Internacional  15) ARTV
-4) TVI                 10) RTP Madeira        16) Porto Canal
-5) RTP 3               11) RTP Acores         17) Euronews
-6) SIC Noticias        12) RTP Africa         18) Kuriakos TV
+1) RTP 1           7) TVI24              13) SIC Internacional
+2) RTP 2           8) RTP Memoria        14) ARTV
+3) SIC             9) RTP Madeira        15) Porto Canal
+4) TVI            10) RTP Acores         16) Euronews
+5) RTP 3          11) RTP Africa         17) Kuriakos TV
+6) SIC Noticias   12) RTP Internacional
 Which TV channel do you want to watch?
 ```
 
