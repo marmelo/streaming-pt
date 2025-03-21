@@ -92,6 +92,8 @@ $ brew install mpv
 $ port install mpv
 ```
 
+Note that some channels only play if you have recent versions of ffmpeg installed.
+
 How to catch RTMP streams
 -----
 
