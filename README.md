@@ -31,18 +31,18 @@ Canais disponíveis:
  5. RTP 3
  6. SIC Notícias
  7. CNN Portugal
- 8. RTP Memória
- 9. RTP Madeira
-10. RTP Açores
-11. RTP África
-12. RTP Internacional
-13. TVI Internacional
-14. TVI Ficção
-15. TVI Reality
-16. ARTV
-17. Porto Canal
-18. Euronews
-19. Canal 11
+ 8. Euronews
+ 9. ARTV
+10. RTP Memória
+11. RTP Madeira
+12. RTP Açores
+13. RTP África
+14. RTP Internacional
+15. TVI Internacional
+16. TVI África
+17. TVI Ficção
+18. TVI Reality
+19. Porto Canal
 20. Kuriakos TV
 
 Digite o nº do canal de TV que deseja ver (ou 'x' para sair): x
@@ -68,10 +68,16 @@ Rádios disponíveis:
 16. RUC
 17. Smooth
 18. TSF
+19. Rádio Clube de Lamego
+20. Rádio Douro Nacional
 
 Digite o nº da rádio que deseja ouvir (ou 'x' para sair): x
 ```
 
+You can also play a specific channel directly, for eg.:
+```bash
+echo 5 | ./radio.sh
+```
 
 Installing dependencies
 -----
@@ -92,7 +98,7 @@ $ brew install mpv
 $ port install mpv
 ```
 
-Note that some channels only play if you have recent versions of ffmpeg installed.
+Note that some channels only play if you have recent versions of ffmpeg (6.0 or above) installed.
 
 How to catch RTMP streams
 -----
