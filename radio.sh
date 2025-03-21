@@ -22,6 +22,7 @@ TITLES=(
   "Smooth"
   "TSF"
   "Rádio Clube de Lamego"
+  "Rádio Douro Nacional"
 )
 
 STREAMS=(
@@ -44,6 +45,7 @@ STREAMS=(
   "http://mcrwowza3.mcr.iol.pt/smooth/smil:smooth.smil/playlist.m3u8"
   "http://tsfdirecto.tsf.pt/tsfdirecto.aac"
   "http://109.71.41.6:8110/stream"
+  "https://sp0.redeaudio.com/9796/stream"
 )
 
 # check if dependencies exist
