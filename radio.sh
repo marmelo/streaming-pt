@@ -23,6 +23,7 @@ TITLES=(
   "TSF"
   "Rádio Clube de Lamego"
   "Rádio Douro Nacional"
+  "Observador"
 )
 
 STREAMS=(
@@ -46,6 +47,7 @@ STREAMS=(
   "http://tsfdirecto.tsf.pt/tsfdirecto.aac"
   "https://stream.zeno.fm/9prct7k8h0hvv"
   "https://sp0.redeaudio.com/9796/stream"
+  "https://playerservices.streamtheworld.com/api/livestream-redirect/OBSERVADORAAC.aac?dist=web-popup&devicename=aac"
 )
 
 # check if dependencies exist
