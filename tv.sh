@@ -56,7 +56,7 @@ STREAMS=(
 function urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
 
 # Functions to fetch dynamic stream URLs for specific channels
-__rtp() { urldecode $(wget https://www.rtp.pt/play/direto/$1 -O - -o /dev/null | grep hls | sed 's/.*hls: //g' | sed 's/, dash.*//g' | sed 's/.*\[//g' | sed 's/\].*//g' | sed 's/[",]//g'); }
+__rtp() { urldecode $(wget https://www.rtp.pt/play/direto/$1 -O - -o /dev/null | grep hls | sed 's/.*hls: //g' | sed 's/, dash.*//g' | sed 's/.*\[//g' | sed 's/\].*//g' | sed 's/[",]//g' | grep -o '\S*http\S*'); }
 __tvi() { echo "https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
 __cnnportugal() { echo "https://video-auth6.iol.pt/live_cnn/live_cnn/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
 __tviint() { echo "https://video-auth6.iol.pt/live_tvi_internacional/live_tvi_internacional/playlist.m3u8?wmsAuthSign=$(wget https://services.iol.pt/matrix?userId= -o /dev/null -O -)"; }
@@ -77,8 +77,10 @@ if [ "$DEBUG" = "true" ]; then
         if [ "${TITLES[i]}" = "$choice" ]; then
           # check if dynamic stream
           if [ "${STREAMS[i]:0:2}" = "__" ]; then
+            echo "dynamic stream, going to play $(${STREAMS[i]})"
             $PLAYER --user-agent="$USER_AGENT" $(${STREAMS[i]})
           else
+            echo "not dynamic stream, going to play ${STREAMS[i]}"
             $PLAYER --user-agent="$USER_AGENT" ${STREAMS[i]}
           fi
           break
