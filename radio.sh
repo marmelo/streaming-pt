@@ -44,7 +44,7 @@ STREAMS=(
   "https://stream.ruc.pt/high"
   "https://stream-hls.bauermedia.pt/smooth.aac/playlist.m3u8"
   "http://tsfdirecto.tsf.pt/tsfdirecto.aac"
-  "http://109.71.41.6:8110/stream"
+  "https://stream.zeno.fm/9prct7k8h0hvv"
   "https://sp0.redeaudio.com/9796/stream"
 )
 
