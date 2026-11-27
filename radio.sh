@@ -13,17 +13,17 @@ TITLES=(
   "Mega Hits"
   "MEO Music"
   "Nova Era"
+  "Observador"
   "Orbital"
   "Oxigénio"
   "Radar"
+  "Rádio Clube de Lamego"
+  "Rádio Douro Nacional"
   "Renascenca"
   "RFM"
   "RUC"
   "Smooth"
   "TSF"
-  "Rádio Clube de Lamego"
-  "Rádio Douro Nacional"
-  "Observador"
 )
 
 STREAMS=(
@@ -37,17 +37,17 @@ STREAMS=(
   "https://28553.live.streamtheworld.com/MEGA_HITSAAC.aac"
   "http://centova.radios.pt/proxy/495"
   "http://centova.radios.pt:9478"
+  "https://playerservices.streamtheworld.com/api/livestream-redirect/OBSERVADORAAC.aac?dist=web-popup&devicename=aac"
   "http://centova.radios.pt:8401"
   "https://proic1.evspt.com/oxigenio_aac"
   "https://proic1.evspt.com/radar_aac"
+  "https://stream.zeno.fm/9prct7k8h0hvv"
+  "https://sp0.redeaudio.com/9796/stream"
   "https://28933.live.streamtheworld.com/RADIO_RENASCENCAAAC.aac"
   "https://22353.live.streamtheworld.com/RFMAAC.aac"
   "https://stream.ruc.pt/high"
   "https://stream-hls.bauermedia.pt/smooth.aac/playlist.m3u8"
   "http://tsfdirecto.tsf.pt/tsfdirecto.aac"
-  "https://stream.zeno.fm/9prct7k8h0hvv"
-  "https://sp0.redeaudio.com/9796/stream"
-  "https://playerservices.streamtheworld.com/api/livestream-redirect/OBSERVADORAAC.aac?dist=web-popup&devicename=aac"
 )
 
 # check if dependencies exist
